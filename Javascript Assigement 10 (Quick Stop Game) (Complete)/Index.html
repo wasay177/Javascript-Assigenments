@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(./Flames.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            font-family: 'Bloody', sans-serif !important;
+            font-size: 100px;
+            color: red;
+        }
+        li{
+            color: red;
+            font-size: 30px;
+            font-family: 'Run!', sans-serif !important;
+            align-items: center;
+        }
+        button{
+            border: 1px solid red;
+            font-size: 20px;
+            padding: 10px 20px;
+            background: none;
+            font-family: "monteserrat";
+            cursor: pointer;
+            margin: 10px;
+            color: red;
+            transition: 0.8s;
+            position: relative;
+            overflow: hidden;
+            font-weight: 500;
+        }
+        button:hover{
+            color: white;
+        }
+        button::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            z-index: -1;
+            transition: 0.8s;
+            bottom: 0;
+            top: 0;
+            border-radius:50% 50% 50% 50%;
+        
+        }
+        button:hover::before{
+            height: 180%;
+        }
+        input{
+            position: relative;
+            width: 100%;
+            border: 1px solid red;
+            background: red;
+            height: 50%;
+            border-radius: 5px;
+            outline: none;
+            color: white;
+            font-size: 1em;
+        }
+        span{
+         color: red; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Quick Stop</h1> 
+    <ul>
+        <li>1.You have to click  before 1000</li>
+        <li>2.If number matches your number then you will win.</li>
+        <li>3.If it doesnt match then you are loss.</li>
+    </ul>
+    <h1 id="number">00</h1>
+    <div>
+        <input type="text" required="required" id="user_input" size="50px"/>
+        <span>Write Any Number</span>
+    </div>
+    <h4 id="result">-</h4>
+   <span>
+
+       <button id="start_btn" onclick="start()">start</button>
+       <button onclick="stop()">stop</button>
+   </span>
+    <script src="app.js"></script>
+</body>
+</html>

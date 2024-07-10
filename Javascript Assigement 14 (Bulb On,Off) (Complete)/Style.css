@@ -1,0 +1,36 @@
+body{
+    background-color: white;
+}
+
+#btn{
+    cursor: pointer;
+    height: 40px;
+    width: 160px;
+    background-color: red;
+    color: black;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    transition-duration: .5s;
+}
+#btn:hover{
+    transform: scale(1.1);
+}
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 60px;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    background-color: yellow;
+    color: green;
+}
