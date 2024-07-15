@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body{
+    margin: 0px;
+    padding: 2px;
+    background-image: url(./Attendance.jpg);
+    background-size: cover;
+}
+
+h3{
+    text-align: center;
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    color: blue;
+    background-color: aqua;
+    border: 10px double blue;
+    border-radius: 25px;
+    margin: 0;
+    padding: 50px;
+}
+
+.Attendance{
+    display: flex;
+    flex-direction: row;
+}
+
+.Total{
+    height: 60px;
+    width: 300px;
+    background-color: blue;
+    color: aqua;
+    border: 10px double aqua; 
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+
+.Present{
+    height: 60px;
+    width: 300px;
+    background-color: red;
+    color: black;
+    border: 10px double black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+
+.Absent{
+    height: 60px;
+    width: 300px;
+    background-color: yellow;
+    color: green;
+    border: 10px double green;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+
+.Leave{
+    height: 60px;
+    width: 300px;
+    background-color: green;
+    color: yellow;
+    border: 10px double yellow;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+table{
+    height: 100px;
+    width: 1250px;
+    background-color: yellow;
+    border: 10px double green;
+    border-radius: 10px;
+    font-family: "Dancing Script", cursive;
+}
+th{
+    border: 10px double black;
+    background-color: red;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+td{
+    border: 10px double aqua;
+    background-color: blue;
+    color: aqua;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+img{
+    height: 50px;
+    width: 100px;
+}
+
+.yellow{
+    background-color: yellow;
+    color: green;
+    font-size: large;
+    height: 50px;
+    width: 250px;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.yellow::placeholder{
+    color: green;
+}
+
+.red{
+    background-color: red;
+    color: black;
+    font-size: large;
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.red::placeholder{
+    color: black;
+}
+
+.green{
+    background-color: green;
+    color: yellow;
+    font-size: large;
+    height: 50px;
+    width: 250px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.green::placeholder{
+    color: yellow;
+}
